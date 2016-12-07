@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="pacmanGame2.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  </head>
+  <body>
+    <svg id="screen" width = "100%" viewBox = "0 0 800 400" style="background-color:black">
+      <text x="650" y="50" font-family="sans-serif" font-size="25" fill="white">score:</text>
+      <text id="score" x="720" y="50" font-family="sans-serif" font-size="25" fill="white">0</text>
+      <text x="650" y="100" font-family="sans-serif" font-size="25" fill="white">Time:</text>
+      <text id="totalTime" x="720" y="100" font-family="sans-serif" font-size="25" fill="white">0</text>
+      <image id="pacman" x="550" y="250" width="55" height="55" xlink:href="img/pacman.png"/>
+      <image id="pacmanFood" x="225" y="0" width="15" height="15" xlink:href="img/pacmanfood.png">
+        <animate id = "pacmanFood1" attributeName="y" from="0" to="400" dur="6s" repeatCount="indefinite" begin="4s"/>
+      </image>
+      <image id="pacmanFood2" x="325" y="0" width="15" height="15" xlink:href="img/pacmanfood.png">
+       <animate attributeName="y" from="0" to="400" dur="6s" repeatCount="indefinite" begin="3s" />
+     </image>
+     <image id="pacmanFood3" x="425" y="0" width="15" height="15" xlink:href="img/pacmanfood.png">
+       <animate id = "pacmanFood1" attributeName="y" from="0" to="400" dur="6s" repeatCount="indefinite" begin="2s"/>
+     </image>
+     <image id="pacmanFood4" x="525" y="0" width="15" height="15" xlink:href="img/pacmanfood.png">
+      <animate attributeName="y" from="0" to="400" dur="6s" repeatCount="indefinite" begin="1s" />
+    </image>
+
+    </svg>
+    <script src="pacmangame2.js"></script>
+  </body>
+</html>
